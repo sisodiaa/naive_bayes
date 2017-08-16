@@ -20,11 +20,11 @@ Run Bundler console
 
 Assign a tweet to a variable
 
-    $ str = "Intel diversity report shows progress is tough to measure http://cnet.co/2x3aGmB"
+    str = "Intel diversity report shows progress is tough to measure http://cnet.co/2x3aGmB"
 
 Run
 
-    $ NaiveBayes.classifier(dataset: 'data/tweets.csv', delimiter: ';', percent: 80, categories: ['technology', 'travel', 'news'], text: str)
+    NaiveBayes.classifier(dataset: 'data/tweets.csv', delimiter: ';', percent: 80, categories: ['technology', 'travel', 'news'], text: str)
 
 You will learn more about its usage in the meet-up.
 
