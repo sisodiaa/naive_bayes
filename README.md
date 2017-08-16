@@ -1,34 +1,27 @@
-# NaiveBayes
+# Naive Bayes Text Classifier
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/naive_bayes`. To experiment with that code, run `bin/console` for an interactive prompt.
+Naive Bayes classification method is a supervised learning algorithm. It applies Bayes' theorm with the "naive" assupmtion of independence between every pair of features.
 
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'naive_bayes'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install naive_bayes
+You can learn more about this method at [MonkeyLearn blog on Naive Bayes Classifier](https://monkeylearn.com/blog/practical-explanation-naive-bayes-classifier).
 
 ## Usage
 
-TODO: Write usage instructions here
+Clone this repository 
+		$ git clone https://github.com/sisodiaa/naive_bayes.git
 
-## Development
+Change the directory
+		$ cd naive_bayes
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Run Bundler console
+		$ bundler console
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Assign a tweet to a variable
+		$ str = "Intel diversity report shows progress is tough to measure http://cnet.co/2x3aGmB"
+
+Run
+		$ NaiveBayes.classifier(dataset: 'data/tweets.csv', delimiter: ';', percent: 80, categories: ['technology', 'travel', 'news'], text: str)
+
+You wull learn more about its usage in the meet-up.
 
 ## Contributing
 
