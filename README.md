@@ -4,43 +4,27 @@ Naive Bayes classification method is a supervised learning algorithm. It applies
 
 You can learn more about this method at [MonkeyLearn blog on Naive Bayes Classifier](https://monkeylearn.com/blog/practical-explanation-naive-bayes-classifier).
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'naive_bayes'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install naive_bayes
-
 ## Usage
 
 Clone this repository 
 
-		$ git clone https://github.com/sisodiaa/naive_bayes.git
+    $ git clone https://github.com/sisodiaa/naive_bayes.git
 
 Change the directory
 
-		$ cd naive_bayes
+    $ cd naive_bayes
 
 Run Bundler console
 
-		$ bundler console
+    $ bundler console
 
 Assign a tweet to a variable
 
-		$ str = "Intel diversity report shows progress is tough to measure http://cnet.co/2x3aGmB"
+    $ str = "Intel diversity report shows progress is tough to measure http://cnet.co/2x3aGmB"
 
 Run
 
-		$ NaiveBayes.classifier(dataset: 'data/tweets.csv', delimiter: ';', percent: 80, categories: ['technology', 'travel', 'news'], text: str)
+    $ NaiveBayes.classifier(dataset: 'data/tweets.csv', delimiter: ';', percent: 80, categories: ['technology', 'travel', 'news'], text: str)
 
 You will learn more about its usage in the meet-up.
 
