@@ -6,8 +6,8 @@ require 'naive_bayes/text_classifier'
 module NaiveBayes
   def self.classifier(dataset:, delimiter:, percent:, categories:, text:)
     # Load data from CSV and split it into training and testing dataset
-    training_data, test_data =
-      Dataset.load_and_split_dataset(dataset, delimiter, percent)
+    data = Dataset.load_data(dataset, delimiter)
+    training_data, test_data = Dataset.split(data, percent)
 
     # Initiate a naive bayes text classifier object with classes
     text_classifier = TextClassifier.new(categories)
